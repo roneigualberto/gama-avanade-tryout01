@@ -1,18 +1,168 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Avanade Angular Academy by Gama - Simulado #1</title>
-	<meta charset="utf-8">
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+<head>
+  <title>Avanade Angular Academy by Gama - Simulado #1</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
+    crossorigin="anonymous">
+ 
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,600,700,800" rel="stylesheet">
+
+    <link href="css/style.css" rel="stylesheet">
+  
 </head>
+
 <body>
-<main role="main" id="main"></main>
-<script
-  src="https://code.jquery.com/jquery-3.2.1.min.js"
-  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-  crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+  <main role="main" id="main">
+
+    <div class="banner jumbotron text-center">
+      <div class="container">
+        <h1 class="titulo">DÊ PROPÓSITO PARA SEU CÓDIGO</h1>
+        <p class="lead" style="font-size: 0.9rem;font-family: Montserrat script=all rev=1, Adobe Blank; font-weight: 520; font-style: normal;">
+          Cansado de desenvolver projetos sem sentido? Participe do Avanade Angular Academy
+        </p>
+        <div >
+          <button style="font-weight: 600" class="bold btn btn-md btn-success" id="btn-apply-form" data-toggle="modal" data-target="#apply-modal">
+            Inscreva-se
+          </button>
+        </div>
+
+
+
+
+      </div>
+    </div>
+
+    <div class="row container-fluid">
+      <div class="col-md-3">
+        <h5 class="text-center" style="font-weight:bold">Inscrições</h5>
+        <h6 class="text-center">02/dez a 04/jan</h6>
+        <p>
+          Para se inscrever basta preencher o formulário e se preparar para o nosso teste técnico com cursos online e simulados
+        </p>
+      </div>
+
+      <div class="col-md-3">
+      
+        <h5 class="text-center" style="font-weight:bold">Teste técnico</h5>
+        <h6 class="text-center">05/jan a 06/jan</h6>
+        <p>
+          Em seguida prove que você está preparado fazendo os testes técnicos totalmente mão na massa
+        </p>
+      </div>
+
+      <div class="col-md-3">
+        <h5 class="text-center" style="font-weight:bold">Seleção e Contratação</h5>
+        <h6 class="text-center">07/jan a 14/jan</h6>
+        <p>
+          Os melhores candidatos serão entrevistados e contratados pela Avanade
+        </p>
+      </div>
+
+      <div class="col-md-3">
+        <h4 class="text-center" style="font-weight:bold" class="text-center">Treinamento</h4>
+        <h6 class="text-center">15/jan a 16/jan</h6>
+        <p>
+          Serão duas semanas de treinamento super hands-on com os melhores devs do mercado
+        </p>
+      </div>
+
+
+    </div>
+
+    <div class="modal fade" id="apply-modal" tabindex="-1" role="dialog" aria-labelledby="applyModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="applyModalLabel">Inscrição</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div id="apply-success"></div>
+            <div id="apply-error"></div>
+            <form>
+              <div class="form-group">
+                <label for="name" class="col-form-label">Nome:</label>
+                <input type="text" class="form-control" name="name" id="name" required="true">
+                <div class="invalid-feedback" id="feedback-name">
+
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="email" class="col-form-label">E-mail:</label>
+                <input type="email" class="form-control" name="email" id="email" required="true">
+
+                <div class="invalid-feedback" id="feedback-email">
+                </div>
+              </div>
+
+              <div class="text-center">
+                <button type="button" id="btn-apply" class="btn btn-primary" onclick="enviar()">Enviar</button>
+              </div>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+    </div>
+
+  </main>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
+    crossorigin="anonymous"></script>
+
+
+  <script> 
+
+
+    function enviar() {
+      $.ajax({
+        method: 'POST',
+        url: 'http://avanade.gama.academy/api/process_applications',
+        dataType: 'json',
+        headers: { EMAIL: 'ronei.mac.rmg@gmail.com' }, // coloque seu email que usou para se inscrever aqui!
+        contentType: 'application/json',
+        data: JSON.stringify({ process_application: { name: $('#name').val(), email: $('#email').val() } }),
+        success: function (json) {
+          $('#apply-success').text("Inscrição foi realizada com sucesso!");
+          $('#apply-success').show();
+
+        },
+        error: function (jqXHR, textStatus, errorThrown) {
+          // Não esquece de tratar os erros
+
+          var erros = jqXHR.responseJSON;
+
+          Object.keys(erros).forEach(field => {
+            $('#' + field).addClass('is-invalid');
+            $('#feedback-' + field).html(erros[field].join("\n"));
+          });
+
+          $('#apply-error').text("Não foi possível realizar a inscrição");
+          $('#apply-error').show();
+
+          console.log('jqXHR', jqXHR.responseJSON);
+          console.log('textStatus', textStatus);
+          console.log('errorThrown', errorThrown);
+
+        }
+      });
+    }
+
+  </script>
 </body>
+
 </html>

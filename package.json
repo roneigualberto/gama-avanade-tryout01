@@ -3,8 +3,7 @@
   "version": "1.0.0",
   "description": "Primeiro simulado para testar suas habilidades de HTML, CSS e Javascript do programa Avanade Angular Academy By Gama",
   "main": "test.js",
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
     "mocha": "^4.0.1",
     "resemblejs": "^2.5.0",

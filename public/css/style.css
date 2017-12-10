@@ -1,0 +1,39 @@
+body {
+    font-family: 'Montserrat';
+    font-size: 22px;
+    overflow: hidden;
+  }
+
+
+  .banner {
+    background-image: url('../img/background-main.jpg');
+    background-repeat: no-repeat;
+    color: #fff;
+    font-weight: bold;
+    background-position: left center;
+    border-radius: 0;
+    border: none;
+  }
+
+  .jumbostron-heading {
+    font-weight: bold;
+  }
+
+  #apply-error,
+  #apply-success {
+    display: none;
+  }
+
+  #feedback-email {
+    white-space: pre-line;
+  }
+
+
+.titulo {
+    font-family: Montserrat, Helvetica, Arial, sans-serif;
+    font-size: 2.4rem;
+    font-style: 900;
+    font-weight: bold;
+    text-transform: none;
+    color: #FFFFFF;
+}

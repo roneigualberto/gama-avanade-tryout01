@@ -9,9 +9,9 @@ var url = 'http://localhost:8090';
 
 describe('Tryout#1 - ', function() {
 
-	it('Teste de fumaça: pelo menos este teste tem que rodar', function() {
+	/*it('Teste de fumaça: pelo menos este teste tem que rodar', function() {
 		assert(true, true)
-	});
+	});*/
 
 	describe('Código HTML&CSS: ', function() {
 
@@ -25,7 +25,7 @@ describe('Tryout#1 - ', function() {
 
 	});
 
-	describe('Formulário de inscrição: ', function() {
+	/*describe('Formulário de inscrição: ', function() {
 		it ('Deve inscrever no processo sem erros', function() {
 			browser.url(url);
 			browser.click('#btn-apply-form');
@@ -45,7 +45,7 @@ describe('Tryout#1 - ', function() {
 			assert.equal("Não pode estar vazio", browser.element('#feedback-name').getText());
 			assert.equal("Não pode estar vazio\nNão é válido", browser.element('#feedback-email').getText());
 		})
-	})
+	})*/
 });
 
 
