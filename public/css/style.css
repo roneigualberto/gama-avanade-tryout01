@@ -1,18 +1,17 @@
 body {
-    font-family: 'Montserrat';
     font-size: 22px;
-    overflow: hidden;
-  }
+}
 
 
   .banner {
     background-image: url('../img/background-main.jpg');
     background-repeat: no-repeat;
     color: #fff;
-    font-weight: bold;
+    font-weight: 800;
     background-position: left center;
     border-radius: 0;
     border: none;
+    text-align: center;
   }
 
   .jumbostron-heading {
@@ -31,9 +30,40 @@ body {
 
 .titulo {
     font-family: Montserrat, Helvetica, Arial, sans-serif;
-    font-size: 2.4rem;
-    font-style: 900;
-    font-weight: bold;
-    text-transform: none;
+    font-size: 2.1rem;
+    font-weight: 800;
     color: #FFFFFF;
 }
+
+.lead {
+  font-size: 1rem;
+  font-family: Montserrat; 
+  font-weight: 500 !important;
+}
+
+.banner .container {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.etapa {
+  font-weight: 700;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.etapa-periodo {
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 0.8rem;
+}
+
+.etapa-descricao {
+  font-size: 1rem;
+}
+
+#btn-apply-form {
+  font-weight: 600;
+}
+
